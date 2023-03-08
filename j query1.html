@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+        $("p").click(function(){
+        $(this).hide();
+        })
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+        $("button").click(function(){
+        $("p").hide();
+        })
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+        $("button").click(function(){
+        $("#test").hide();
+        });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+        $("button").click(function(){
+        $(".test").hide();
+        });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+        $("p").click(function(){
+        $("this").hide();
+        });
+        });
+    </script>
+    <script>
+    $(document).ready(function(){
+    $("#p").mouseenter(function(){
+    alert("you enter p1 !");
+    });
+    });
+    </script>
+    <script>
+    (document).ready(function(){
+        $("#p1").mousedown(function(){
+          alert("Mouse down over p1!");
+        });
+      });
+      </script>
+      <script>
+        $(document).ready(function(){
+          $("#p1").mouseup(function(){
+            alert("Mouse up over p1!");
+          });
+        });
+        </script>
+        <script>
+            $(document).ready(function(){
+            $("input").focus(function(){
+            $(this).css("background-color","yellow");
+            });
+             $("input").blur(function(){
+            $(this).css("background-color","blue");
+             });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+            $("#hide").click(function(){
+            $("p").hide();
+            });
+            $("#show").click(function(){
+            $("p").show();
+            });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+            $("button").click(function(){
+            $("#div1").fadein();
+            $("#div2").fadein("slow");
+            $("#div3").fadein(4000);
+            });
+            });
+        </script>
+</head>
+<body>
+    <p>click away</p>
+    <p>click me</p>
+    <hr>
+    <p>this is paragraph</p>
+    <button>click</button>
+    <hr>
+    <p>click away</p>
+    <p id="test">this is another paragraph</p>
+    <button>click me</button>
+    <hr>
+    <p>click away</p>
+    <p class="test">this is paragraph</p>
+    <button>click me away</button>
+    <hr>
+    <p>click away</p>
+    <p>this is event pogram</p>
+    <hr>
+     <p id="p1">this is mousevevnet pogram</p>
+     <hr>
+     <p id="p1">This is a paragraph.</p>
+     <hr>
+     <p id="p1">This is a paragraph.</p>
+     <hr>
+     name<input type="name" name="name"><br>
+     email<input type="email" name="email">
+     <hr>
+     <p>this is hide and show pogramme</p>
+     <button id="hide">click me away</button>
+     <button id="show">click me away</button>
+     <hr>
+     <p>this is fade in pogramme</p>
+     <button>click</button>
+     <div id="div1" style="height: 70px; width: 70px; display: none; background-color: yellowgreen;"></div>
+     <div id="div2" style="height: 70px; width: 70px; display: none; background-color: aqua;"></div>
+     <div id="div3" style="height: 70px; width: 70px; display: none; background-color:blanchedalmond;"></div>
+    </body>
+</html>
